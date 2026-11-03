@@ -30,7 +30,8 @@ tr:nth-child(even) {
     background-color: lightgray;
 }
 
-tr:in-range(2-8) {
+tr {
+    /* De 2 a 8 */
     background-color: lightgreen;
 }
 
