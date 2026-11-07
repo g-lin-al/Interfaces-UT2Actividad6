@@ -13,10 +13,17 @@ body {
 table {
     margin: auto;
     width: 70%;
-    /* height: 70vh; */
     border: 1px white solid;
     border-collapse: collapse;
     color: black;
+}
+
+thead th {
+    width: 10%;
+}
+
+thead th:nth-child(2) {
+    width: 50%;
 }
 
 
@@ -30,8 +37,7 @@ tr:nth-child(even) {
     background-color: lightgray;
 }
 
-tr {
-    /* De 2 a 8 */
+tr:nth-child(-n+8) {
     background-color: lightgreen;
 }
 
@@ -41,6 +47,10 @@ tr:first-child {
 
 tr:last-child {
     background-color: red;
+}
+
+tr:nth-child(17) {
+    background-color: rgb(255, 104, 104);
 }
 
 /* Termina el grupo para celdas */
@@ -53,6 +63,7 @@ th, tr, td {
 th {
     background-color: darkorange;
     color: white;
+    height: 2rem;
 }
 
 button {
