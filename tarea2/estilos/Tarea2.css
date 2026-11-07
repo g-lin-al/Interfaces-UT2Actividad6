@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-image: url(/imagenes/fondo_churros.png), url(/imagenes/fondo_azuqueca.jpg);
+    background-repeat: no-repeat;
+    background-position: left, right;
+    background-size: 50% 100vh;
+    font-family: sans-serif;
+}
+
+form {
+    border-radius: 10px;
+    width: 50%;
+    height: 90%;
+    margin: auto;
+    padding: 1%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+form > img {
+    width: 15%;
+}
+
+label {
+    color: black;
+}
+
+h2, label, input, textarea {
+    margin: 2%;
+}
+
+#nombre, #email, #dinerito {
+    border-radius: 5px;
+    padding: 1%;
+    width: 90%;
+}
+
+input:invalid {
+    background-color: red;
+}
+
+input:invalid::placeholder {
+    color: white;
+}
+
+input:valid {
+    background-color: lightgreen;
+}
+
+input:checked {
+    accent-color: red;
+}
+
+textarea {
+    width: 90%;
+    padding: 1%;
+}
+
+button {
+    background-color: black;
+    color: red;
+    width: 95%;
+    padding: 1%;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: red;
+    color: black;
+}
